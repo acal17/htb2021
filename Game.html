@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!---Page Title-->
+<head>
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css1/index.css">
+</head>
+
+<!---Main Body-->
+<body>
+
+	<!---Title On Page-->
+	
+	<ul>
+	  <li><a class="active" href="index.html">Home</a></li>
+	  <li><a href="Learning.html">Learning</a></li>
+      <li><a href="Game.html">Game</a></li>
+      <li><a href="Sources.html">Sources</a></li>
+	</ul>
+	
+	<br />
+	<!--Page Title-->
+	<div class="pageTitles">
+		<b>GAME</b>
+	</div>
+    <br />
+    
+
+	<!---Description--->
+	<div class= "Learning">
+        <div class = "generalText">
+            <p> Play the game in order to practice your investment knowledge, gain achievements and climb up the leader board!</p>
+        </div>
+
+	    <div class = "generalText">
+            <p> These are the badges on offer:</p>
+            <img src="Images2/MonkeyBadge.png" title= "the Monkey badge" width= "210" height="210"></a>
+            <img src="Images2/LionBadge.png" title= "the Lion badge" width= "210" height="210"></a>
+            <img src="Images2/ZebraBadge.png" title= "the Zebra badge" width= "210" height="210"></a>
+            <img src="Images2/GiraffeBadge.png" title= "the Giraffe badge" width= "210" height="210"></a>
+            <img src="Images2/ElephantBadge.png" title= "the Elephant badge" width= "210" height="210"></a>
+             
+            <div class = "right">
+                <div class= "border">
+                    <div class = "generalText">
+                        
+                            <h2> Leaderboard</h2>
+                            <p>First place</p>
+                            <p>Second place</p>
+                            <p>Third place</p>
+                            
+                    </div> 
+                </div>
+            </div>
+           
+    </div>
+    
+  
+
+    <div id = "twitch-embed"></div>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+        width: 790,
+        height: 480,
+        channel: "acal17",
+        layout: "video",
+        autoplay: false,
+
+        parent: ["https://www.twitch.tv/acal17"]
+    });
+
+    embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+    
+    });
+
+    </script>
+ 
+
+</body>
+
+</html>
